@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)startApplication:(id)sender;
+- (IBAction)viewApplicationStatus:(id)sender;
 
 @end
 

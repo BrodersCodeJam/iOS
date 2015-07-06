@@ -24,4 +24,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)startApplication:(id)sender
+{
+    [self performSegueWithIdentifier: @"startApplication" sender: self];
+
+}
+- (IBAction)viewApplicationStatus:(id)sender
+{
+}
+
 @end

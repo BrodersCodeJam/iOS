@@ -17,6 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    //register the device for push notifcations
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeSound |
+                                            UIUserNotificationTypeAlert | UIUserNotificationTypeBadge categories:nil];
+    
+    [[UIApplication sharedApplication] registerUserNotificationSettings:settings];
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+    
+    
+    
     return YES;
 }
 
@@ -40,6 +51,30 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark Push handling
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken {
+    SBNotificationHub* hub = [[SBNotificationHub alloc] initWithConnectionString:@"Endpoint=sb://broders.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=a0wHB1lUPr1Sq2Eb2TQsIRsEmOYAKoEW6xV2n7ke3W8=" notificationHubPath:@"broders"];
+    
+    [hub registerNativeWithDeviceToken:deviceToken tags:nil completion:^(NSError* error) {
+        if (error != nil) {
+            NSLog(@"Error registering for notifications: %@", error);
+        }
+        else {
+            [self MessageBox:@"Registration Status" message:@"Registered"];
+        }
+    }];
+}
+-(void)MessageBox:(NSString *)title message:(NSString *)messageText
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:messageText delegate:self
+                                          cancelButtonTitle:@"OK" otherButtonTitles: nil];
+    [alert show];
+}
+- (void)application:(UIApplication *)application didReceiveRemoteNotification: (NSDictionary *)userInfo {
+    NSLog(@"%@", userInfo);
+    [self MessageBox:@"Notification" message:[[userInfo objectForKey:@"aps"] valueForKey:@"alert"]];
 }
 
 @end
