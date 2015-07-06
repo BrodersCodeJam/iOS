@@ -14,6 +14,15 @@
 		ECF7539B1B4AD85700931B67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECF7539A1B4AD85700931B67 /* Images.xcassets */; };
 		ECF7539E1B4AD85700931B67 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = ECF7539C1B4AD85700931B67 /* LaunchScreen.xib */; };
 		ECF753AA1B4AD85700931B67 /* homeloansTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753A91B4AD85700931B67 /* homeloansTests.m */; };
+		ECF753B41B4AD9C600931B67 /* WindowsAzureMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF753B31B4AD9C600931B67 /* WindowsAzureMessaging.framework */; };
+		ECF753B71B4ADEF100931B67 /* ApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753B61B4ADEF100931B67 /* ApplicationViewController.m */; };
+		ECF753C11B4ADF6B00931B67 /* RMStep.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753BC1B4ADF6B00931B67 /* RMStep.m */; };
+		ECF753C21B4ADF6B00931B67 /* RMStepsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753BE1B4ADF6B00931B67 /* RMStepsBar.m */; };
+		ECF753C31B4ADF6B00931B67 /* RMStepsController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753C01B4ADF6B00931B67 /* RMStepsController.m */; };
+		ECF753C61B4AE00300931B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF753C51B4AE00300931B67 /* CoreGraphics.framework */; };
+		ECF753C81B4AE03300931B67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF753C71B4AE03300931B67 /* UIKit.framework */; };
+		ECF753CA1B4AE05700931B67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF753C91B4AE05700931B67 /* Foundation.framework */; };
+		ECF753CD1B4AE1BD00931B67 /* ApplicationStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753CC1B4AE1BD00931B67 /* ApplicationStepViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +49,20 @@
 		ECF753A31B4AD85700931B67 /* homeloansTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = homeloansTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF753A81B4AD85700931B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF753A91B4AD85700931B67 /* homeloansTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = homeloansTests.m; sourceTree = "<group>"; };
+		ECF753B31B4AD9C600931B67 /* WindowsAzureMessaging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMessaging.framework; sourceTree = "<group>"; };
+		ECF753B51B4ADEF100931B67 /* ApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationViewController.h; sourceTree = "<group>"; };
+		ECF753B61B4ADEF100931B67 /* ApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationViewController.m; sourceTree = "<group>"; };
+		ECF753BB1B4ADF6B00931B67 /* RMStep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStep.h; sourceTree = "<group>"; };
+		ECF753BC1B4ADF6B00931B67 /* RMStep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMStep.m; sourceTree = "<group>"; };
+		ECF753BD1B4ADF6B00931B67 /* RMStepsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStepsBar.h; sourceTree = "<group>"; };
+		ECF753BE1B4ADF6B00931B67 /* RMStepsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMStepsBar.m; sourceTree = "<group>"; };
+		ECF753BF1B4ADF6B00931B67 /* RMStepsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMStepsController.h; sourceTree = "<group>"; };
+		ECF753C01B4ADF6B00931B67 /* RMStepsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMStepsController.m; sourceTree = "<group>"; };
+		ECF753C51B4AE00300931B67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ECF753C71B4AE03300931B67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ECF753C91B4AE05700931B67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ECF753CB1B4AE1BD00931B67 /* ApplicationStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationStepViewController.h; sourceTree = "<group>"; };
+		ECF753CC1B4AE1BD00931B67 /* ApplicationStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationStepViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECF753CA1B4AE05700931B67 /* Foundation.framework in Frameworks */,
+				ECF753C81B4AE03300931B67 /* UIKit.framework in Frameworks */,
+				ECF753C61B4AE00300931B67 /* CoreGraphics.framework in Frameworks */,
+				ECF753B41B4AD9C600931B67 /* WindowsAzureMessaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +90,10 @@
 		ECF753811B4AD85700931B67 = {
 			isa = PBXGroup;
 			children = (
+				ECF753C91B4AE05700931B67 /* Foundation.framework */,
+				ECF753C71B4AE03300931B67 /* UIKit.framework */,
+				ECF753B31B4AD9C600931B67 /* WindowsAzureMessaging.framework */,
+				ECF753C51B4AE00300931B67 /* CoreGraphics.framework */,
 				ECF7538C1B4AD85700931B67 /* homeloans */,
 				ECF753A61B4AD85700931B67 /* homeloansTests */,
 				ECF7538B1B4AD85700931B67 /* Products */,
@@ -83,8 +114,18 @@
 			children = (
 				ECF753911B4AD85700931B67 /* AppDelegate.h */,
 				ECF753921B4AD85700931B67 /* AppDelegate.m */,
+				ECF753B51B4ADEF100931B67 /* ApplicationViewController.h */,
+				ECF753B61B4ADEF100931B67 /* ApplicationViewController.m */,
+				ECF753CB1B4AE1BD00931B67 /* ApplicationStepViewController.h */,
+				ECF753CC1B4AE1BD00931B67 /* ApplicationStepViewController.m */,
 				ECF753941B4AD85700931B67 /* ViewController.h */,
 				ECF753951B4AD85700931B67 /* ViewController.m */,
+				ECF753BB1B4ADF6B00931B67 /* RMStep.h */,
+				ECF753BC1B4ADF6B00931B67 /* RMStep.m */,
+				ECF753BD1B4ADF6B00931B67 /* RMStepsBar.h */,
+				ECF753BE1B4ADF6B00931B67 /* RMStepsBar.m */,
+				ECF753BF1B4ADF6B00931B67 /* RMStepsController.h */,
+				ECF753C01B4ADF6B00931B67 /* RMStepsController.m */,
 				ECF753971B4AD85700931B67 /* Main.storyboard */,
 				ECF7539A1B4AD85700931B67 /* Images.xcassets */,
 				ECF7539C1B4AD85700931B67 /* LaunchScreen.xib */,
@@ -219,9 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ECF753961B4AD85700931B67 /* ViewController.m in Sources */,
 				ECF753931B4AD85700931B67 /* AppDelegate.m in Sources */,
+				ECF753CD1B4AE1BD00931B67 /* ApplicationStepViewController.m in Sources */,
+				ECF753961B4AD85700931B67 /* ViewController.m in Sources */,
+				ECF753B71B4ADEF100931B67 /* ApplicationViewController.m in Sources */,
 				ECF753901B4AD85700931B67 /* main.m in Sources */,
+				ECF753C11B4ADF6B00931B67 /* RMStep.m in Sources */,
+				ECF753C21B4ADF6B00931B67 /* RMStepsBar.m in Sources */,
+				ECF753C31B4ADF6B00931B67 /* RMStepsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +395,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = homeloans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5d9c753c-35d9-4468-a17c-5dafd2add506";
 			};
 			name = Debug;
 		};
@@ -359,9 +410,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = homeloans/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5d9c753c-35d9-4468-a17c-5dafd2add506";
 			};
 			name = Release;
 		};
