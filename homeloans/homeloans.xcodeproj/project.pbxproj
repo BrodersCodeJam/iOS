@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC5CBFA91B4B05B2000BB381 /* CaptureOTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CBFA81B4B05B2000BB381 /* CaptureOTPViewController.m */; };
+		EC5CBFAC1B4B11EB000BB381 /* ConfirmOTPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CBFAB1B4B11EB000BB381 /* ConfirmOTPViewController.m */; };
+		EC5CBFAF1B4B2302000BB381 /* AdditionalDocumentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC5CBFAE1B4B2302000BB381 /* AdditionalDocumentsViewController.m */; };
+		EC5CBFBE1B4B289F000BB381 /* checkbox_big_deselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CBFBA1B4B289F000BB381 /* checkbox_big_deselected.png */; };
+		EC5CBFBF1B4B289F000BB381 /* checkbox_big_deselected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CBFBB1B4B289F000BB381 /* checkbox_big_deselected@2x.png */; };
+		EC5CBFC01B4B289F000BB381 /* checkbox_big_selected.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CBFBC1B4B289F000BB381 /* checkbox_big_selected.png */; };
+		EC5CBFC11B4B289F000BB381 /* checkbox_big_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC5CBFBD1B4B289F000BB381 /* checkbox_big_selected@2x.png */; };
 		ECF753901B4AD85700931B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF7538F1B4AD85700931B67 /* main.m */; };
 		ECF753931B4AD85700931B67 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753921B4AD85700931B67 /* AppDelegate.m */; };
 		ECF753961B4AD85700931B67 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF753951B4AD85700931B67 /* ViewController.m */; };
@@ -36,6 +43,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC5CBFA71B4B05B2000BB381 /* CaptureOTPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureOTPViewController.h; sourceTree = "<group>"; };
+		EC5CBFA81B4B05B2000BB381 /* CaptureOTPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureOTPViewController.m; sourceTree = "<group>"; };
+		EC5CBFAA1B4B11EB000BB381 /* ConfirmOTPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmOTPViewController.h; sourceTree = "<group>"; };
+		EC5CBFAB1B4B11EB000BB381 /* ConfirmOTPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmOTPViewController.m; sourceTree = "<group>"; };
+		EC5CBFAD1B4B2301000BB381 /* AdditionalDocumentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdditionalDocumentsViewController.h; sourceTree = "<group>"; };
+		EC5CBFAE1B4B2302000BB381 /* AdditionalDocumentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdditionalDocumentsViewController.m; sourceTree = "<group>"; };
+		EC5CBFBA1B4B289F000BB381 /* checkbox_big_deselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_big_deselected.png; sourceTree = "<group>"; };
+		EC5CBFBB1B4B289F000BB381 /* checkbox_big_deselected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_big_deselected@2x.png"; sourceTree = "<group>"; };
+		EC5CBFBC1B4B289F000BB381 /* checkbox_big_selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_big_selected.png; sourceTree = "<group>"; };
+		EC5CBFBD1B4B289F000BB381 /* checkbox_big_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox_big_selected@2x.png"; sourceTree = "<group>"; };
 		ECF7538A1B4AD85700931B67 /* homeloans.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeloans.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF7538E1B4AD85700931B67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ECF7538F1B4AD85700931B67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +104,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EC5CBFB91B4B288D000BB381 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				EC5CBFBA1B4B289F000BB381 /* checkbox_big_deselected.png */,
+				EC5CBFBB1B4B289F000BB381 /* checkbox_big_deselected@2x.png */,
+				EC5CBFBC1B4B289F000BB381 /* checkbox_big_selected.png */,
+				EC5CBFBD1B4B289F000BB381 /* checkbox_big_selected@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		ECF753811B4AD85700931B67 = {
 			isa = PBXGroup;
 			children = (
@@ -127,9 +155,16 @@
 				ECF753BF1B4ADF6B00931B67 /* RMStepsController.h */,
 				ECF753C01B4ADF6B00931B67 /* RMStepsController.m */,
 				ECF753971B4AD85700931B67 /* Main.storyboard */,
+				EC5CBFB91B4B288D000BB381 /* images */,
 				ECF7539A1B4AD85700931B67 /* Images.xcassets */,
 				ECF7539C1B4AD85700931B67 /* LaunchScreen.xib */,
 				ECF7538D1B4AD85700931B67 /* Supporting Files */,
+				EC5CBFA71B4B05B2000BB381 /* CaptureOTPViewController.h */,
+				EC5CBFA81B4B05B2000BB381 /* CaptureOTPViewController.m */,
+				EC5CBFAA1B4B11EB000BB381 /* ConfirmOTPViewController.h */,
+				EC5CBFAB1B4B11EB000BB381 /* ConfirmOTPViewController.m */,
+				EC5CBFAD1B4B2301000BB381 /* AdditionalDocumentsViewController.h */,
+				EC5CBFAE1B4B2302000BB381 /* AdditionalDocumentsViewController.m */,
 			);
 			path = homeloans;
 			sourceTree = "<group>";
@@ -240,9 +275,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC5CBFBF1B4B289F000BB381 /* checkbox_big_deselected@2x.png in Resources */,
 				ECF753991B4AD85700931B67 /* Main.storyboard in Resources */,
+				EC5CBFC11B4B289F000BB381 /* checkbox_big_selected@2x.png in Resources */,
 				ECF7539E1B4AD85700931B67 /* LaunchScreen.xib in Resources */,
 				ECF7539B1B4AD85700931B67 /* Images.xcassets in Resources */,
+				EC5CBFC01B4B289F000BB381 /* checkbox_big_selected.png in Resources */,
+				EC5CBFBE1B4B289F000BB381 /* checkbox_big_deselected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +304,10 @@
 				ECF753961B4AD85700931B67 /* ViewController.m in Sources */,
 				ECF753B71B4ADEF100931B67 /* ApplicationViewController.m in Sources */,
 				ECF753901B4AD85700931B67 /* main.m in Sources */,
+				EC5CBFA91B4B05B2000BB381 /* CaptureOTPViewController.m in Sources */,
 				ECF753C11B4ADF6B00931B67 /* RMStep.m in Sources */,
+				EC5CBFAC1B4B11EB000BB381 /* ConfirmOTPViewController.m in Sources */,
+				EC5CBFAF1B4B2302000BB381 /* AdditionalDocumentsViewController.m in Sources */,
 				ECF753C21B4ADF6B00931B67 /* RMStepsBar.m in Sources */,
 				ECF753C31B4ADF6B00931B67 /* RMStepsController.m in Sources */,
 			);
@@ -474,6 +516,7 @@
 				ECF753AF1B4AD85700931B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECF753B01B4AD85700931B67 /* Build configuration list for PBXNativeTarget "homeloansTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +525,7 @@
 				ECF753B21B4AD85700931B67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

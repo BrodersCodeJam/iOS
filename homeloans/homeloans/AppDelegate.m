@@ -55,14 +55,17 @@
 
 #pragma mark Push handling
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) deviceToken {
-    SBNotificationHub* hub = [[SBNotificationHub alloc] initWithConnectionString:@"Endpoint=sb://broders.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=a0wHB1lUPr1Sq2Eb2TQsIRsEmOYAKoEW6xV2n7ke3W8=" notificationHubPath:@"broders"];
+    NSString *connectionString = @"Endpoint=sb://broders.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=a0wHB1lUPr1Sq2Eb2TQsIRsEmOYAKoEW6xV2n7ke3W8=";
+    NSString *notificationHub = @"broders";
+    
+    SBNotificationHub* hub = [[SBNotificationHub alloc] initWithConnectionString:connectionString notificationHubPath:notificationHub];
     
     [hub registerNativeWithDeviceToken:deviceToken tags:nil completion:^(NSError* error) {
         if (error != nil) {
             NSLog(@"Error registering for notifications: %@", error);
         }
         else {
-            [self MessageBox:@"Registration Status" message:@"Registered"];
+            NSLog(@"Succesfully registered device for notifications");
         }
     }];
 }

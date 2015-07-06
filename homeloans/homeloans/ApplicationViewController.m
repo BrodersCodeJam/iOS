@@ -23,21 +23,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//create the steps
 - (NSArray *)stepViewControllers {
-    
-    UIViewController *firstStep = [self.storyboard instantiateViewControllerWithIdentifier:@"ApplicationStep1"];
-    firstStep.step.title = @"Offer to Purchase";
-    
-    UIViewController *secondStep = [self.storyboard instantiateViewControllerWithIdentifier:@"ApplicationStep2"];
-    secondStep.step.title = @"Verify Details";
-    
-    UIViewController *thirdStep = [self.storyboard instantiateViewControllerWithIdentifier:@"ApplicationStep3"];
-    thirdStep.step.title = @"Supply additional information";
-    
-    UIViewController *fourthStep = [self.storyboard instantiateViewControllerWithIdentifier:@"ApplicationStep4"];
-    fourthStep.step.title = @"Application submitted";
-    
-    return @[firstStep,secondStep,thirdStep,fourthStep];
+    return @[
+             [self createStep:@"ApplicationStep1":@"Offer to Purchase"],
+             [self createStep:@"ApplicationStep2":@"Verify Details"],
+             [self createStep:@"ApplicationStep3":@"Addition Docs"],
+             [self createStep:@"ApplicationStep4":@"Submitted"],
+             ];
+}
+
+//factory method to create wizard steps
+- (UIViewController*)createStep:(NSString*)stepStoryBoardIdentifier :(NSString*)title
+{
+    UIViewController *step = [self.storyboard instantiateViewControllerWithIdentifier:stepStoryBoardIdentifier];
+    step.step.title = title;
+    return step;
 }
 
 - (void)finishedAllSteps {

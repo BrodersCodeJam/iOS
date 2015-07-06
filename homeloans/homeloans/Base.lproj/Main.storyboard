@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -8,16 +8,13 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-so-NLw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tSW-so-NLw">
                                 <rect key="frame" x="55" y="90" width="207" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Apply for your home loan now">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -25,8 +22,9 @@
                                     <action selector="startApplication:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kEa-nU-nLe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APg-i9-flH">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="APg-i9-flH">
                                 <rect key="frame" x="55" y="137" width="220" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Check on my application status">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -38,289 +36,432 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="xxC-lX-Wf0" kind="presentation" identifier="startApplication" id="pnY-8t-aoe"/>
+                        <segue destination="xxC-lX-Wf0" kind="modal" identifier="startApplication" id="pnY-8t-aoe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="174.93333333333334" y="346.48000000000002"/>
         </scene>
         <!--Application View Controller-->
         <scene sceneID="hcP-M0-dw8">
             <objects>
                 <viewController id="xxC-lX-Wf0" customClass="ApplicationViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nQJ-Em-fhe"/>
-                        <viewControllerLayoutGuide type="bottom" id="RlL-b2-5Jy"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9d7-T1-tcl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWj-84-AXv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1178" y="206"/>
+            <point key="canvasLocation" x="628.26666666666665" y="195.01333333333332"/>
         </scene>
-        <!--Application Step View Controller-->
-        <scene sceneID="dj1-S2-7a5">
+        <!--CaptureOTP View Controller-->
+        <scene sceneID="2D7-GG-csh">
             <objects>
-                <viewController storyboardIdentifier="ApplicationStep2" id="uoO-Xt-WOO" customClass="ApplicationStepViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pAe-dm-ega"/>
-                        <viewControllerLayoutGuide type="bottom" id="lxV-gd-O9n"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hfG-aU-0Hn">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                <viewController storyboardIdentifier="ApplicationStep1" id="LHp-Zb-9QT" customClass="CaptureOTPViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YiN-pK-Dbv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PR-hs-8Xv">
-                                <rect key="frame" x="0.0" y="182" width="600" height="236"/>
+                            <view contentMode="scaleToFill" id="qqn-YO-JZ9">
+                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FW2-ju-ta2">
-                                        <rect key="frame" x="252" y="186" width="96" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="80q-qP-bWd">
+                                        <rect key="frame" x="33" y="462" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Previous Step">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="previousStepTapped:" destination="uoO-Xt-WOO" eventType="touchUpInside" id="A5i-Uj-lWN"/>
+                                            <action selector="previousStepTapped:" destination="LHp-Zb-9QT" eventType="touchUpInside" id="2uY-a6-TXp"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2K3-Ra-6pk">
-                                        <rect key="frame" x="266" y="147" width="69" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Pu-lR-fQn">
+                                        <rect key="frame" x="251" y="462" width="69" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Next Step">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="nextStepTapped:" destination="uoO-Xt-WOO" eventType="touchUpInside" id="5ds-Xx-Ghc"/>
+                                            <action selector="nextStepTapped:" destination="LHp-Zb-9QT" eventType="touchUpInside" id="CwK-UB-tEg"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOj-oD-ruB">
-                                        <rect key="frame" x="273" y="20" width="54.5" height="119.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Iqf-NB-QMU">
+                                        <rect key="frame" x="8" y="8" width="30" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select your offer to purchase document for upload so we may process your information." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Std-bG-qXk">
+                                        <rect key="frame" x="40" y="8" width="272" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="1tL-g0-To9">
+                                        <rect key="frame" x="13" y="128" width="299" height="246"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oET-bd-nlO">
+                                        <rect key="frame" x="101" y="84" width="118" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Select Document">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOTP:" destination="LHp-Zb-9QT" eventType="touchUpInside" id="Mb1-gn-qo3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="1tL-g0-To9" id="rAo-gF-9Ca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jv-Pq-HnW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="989"/>
+        </scene>
+        <!--ConfirmOTP View Controller-->
+        <scene sceneID="oly-9l-gnP">
+            <objects>
+                <viewController storyboardIdentifier="ApplicationStep2" id="nTE-jO-HHs" customClass="ConfirmOTPViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jxR-fN-jHp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="5bG-2o-7yT">
+                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nUj-JM-gL5">
+                                        <rect key="frame" x="33" y="462" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Previous Step">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousStepTapped:" destination="nTE-jO-HHs" eventType="touchUpInside" id="vPe-0r-vYx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="De0-Rb-xKL">
+                                        <rect key="frame" x="251" y="462" width="69" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Next Step">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextStepTapped:" destination="nTE-jO-HHs" eventType="touchUpInside" id="jwV-SN-W8e"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jkO-fn-Nsu">
+                                        <rect key="frame" x="8" y="8" width="34" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please confirm the details we have extracted from the offer to purchase." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2bw-bc-BIY">
+                                        <rect key="frame" x="50" y="8" width="262" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stand / Erf: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sRb-w3-bjl">
+                                        <rect key="frame" x="8" y="100" width="99" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suburb:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b47-8H-GZT">
+                                        <rect key="frame" x="37" y="138" width="99" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Purchase Price:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="vw2-hX-bzJ">
+                                        <rect key="frame" x="15" y="234" width="85" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H6n-4P-zzI">
+                                        <rect key="frame" x="33" y="287" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" id="erv-su-HTj">
+                                        <rect key="frame" x="8" y="321" width="92" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="yd3-8y-Ce9">
+                                        <rect key="frame" x="101" y="96" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="J2Z-cW-PcC"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="YQL-7h-3Lz">
+                                        <rect key="frame" x="101" y="134" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="nJs-cK-a3k"/>
+                                        </connections>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="94m-SQ-d5J">
+                                        <rect key="frame" x="31" y="176" width="75" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Unit 4 The Argyle, 18 Riepen Road, Hurlingham, Johannesburg, 2191" id="eL0-wZ-geq">
+                                        <rect key="frame" x="101" y="172" width="206" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="HFt-01-nd4"/>
+                                        </connections>
+                                    </textView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="pam-eb-IDH">
+                                        <rect key="frame" x="101" y="242" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="2jK-01-hMO"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="n63-gW-Uew">
+                                        <rect key="frame" x="101" y="283" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="fHV-Jy-u4F"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="ber-qo-gdk">
+                                        <rect key="frame" x="101" y="318" width="206" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="nTE-jO-HHs" id="2AU-oR-BjS"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dWC-tw-jMa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="433" y="989"/>
+        </scene>
+        <!--Additional Documents View Controller-->
+        <scene sceneID="tRW-ts-nZc">
+            <objects>
+                <viewController storyboardIdentifier="ApplicationStep3" id="R6Z-mx-ZsQ" customClass="AdditionalDocumentsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nrO-JA-HUJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="uUa-yw-YcK">
+                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Tco-BH-aUZ">
+                                        <rect key="frame" x="33" y="462" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Previous Step">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousStepTapped:" destination="R6Z-mx-ZsQ" eventType="touchUpInside" id="OhV-iP-R7Q"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lim-Mn-fyB">
+                                        <rect key="frame" x="8" y="8" width="32" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DfE-y7-Vxt">
+                                        <rect key="frame" x="251" y="462" width="69" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Next Step">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextStepTapped:" destination="R6Z-mx-ZsQ" eventType="touchUpInside" id="SoB-IC-AdF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now please upload the additional documents we require, some of these we may already have on file." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Bw-QU-Gcc">
+                                        <rect key="frame" x="42" y="8" width="272" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_big_selected.png" id="ThB-Fh-C3b">
+                                        <rect key="frame" x="33" y="100" width="35" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_big_selected.png" id="DnI-3D-Xgc">
+                                        <rect key="frame" x="33" y="156" width="35" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_big_deselected.png" id="mXv-XL-Wlg">
+                                        <rect key="frame" x="33" y="210" width="35" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkbox_big_selected.png" id="lEr-MA-pKg">
+                                        <rect key="frame" x="33" y="270" width="35" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID Document" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="a5A-BK-8yv">
+                                        <rect key="frame" x="76" y="106" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Utlity Bill" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kPk-v5-DO5">
+                                        <rect key="frame" x="76" y="162" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proof of Address" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PTa-MX-S44">
+                                        <rect key="frame" x="76" y="216" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payslip" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cZu-OM-OJl">
+                                        <rect key="frame" x="76" y="276" width="140" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="afc-AJ-fv6">
+                                        <rect key="frame" x="224" y="212" width="73" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Upload">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="selectOTP:" destination="R6Z-mx-ZsQ" eventType="touchUpInside" id="F2w-PT-b5b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="85d-4P-j7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="87" y="1663"/>
+        </scene>
+        <!--Application Step View Controller-->
+        <scene sceneID="fWY-M6-wrp">
+            <objects>
+                <viewController storyboardIdentifier="ApplicationStep4" id="mpO-ZG-f5v" customClass="ApplicationStepViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lKa-AR-bax">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Oxf-l9-mFE">
+                                <rect key="frame" x="0.0" y="76" width="320" height="492"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="W4U-T4-YTt">
+                                        <rect key="frame" x="33" y="462" width="96" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Previous Step">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="previousStepTapped:" destination="mpO-ZG-f5v" eventType="touchUpInside" id="gfS-5B-OOJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gvz-gH-cc3">
+                                        <rect key="frame" x="251" y="462" width="69" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="nextStepTapped:" destination="mpO-ZG-f5v" eventType="touchUpInside" id="Rs1-lK-huA"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BSW-WW-MvS">
+                                        <rect key="frame" x="8" y="8" width="31" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="70W-u5-Q95">
+                                        <rect key="frame" x="45" y="8" width="267" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Congratulations you have given us everything we need to process your home loan application. We will update you through push notifications at each step of the process.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="FW2-ju-ta2" firstAttribute="top" secondItem="2K3-Ra-6pk" secondAttribute="bottom" constant="8" id="42v-7n-cn9"/>
-                                    <constraint firstAttribute="centerX" secondItem="VOj-oD-ruB" secondAttribute="centerX" id="8k0-5e-ISJ"/>
-                                    <constraint firstAttribute="centerX" secondItem="FW2-ju-ta2" secondAttribute="centerX" id="Fb5-ph-cfi"/>
-                                    <constraint firstItem="VOj-oD-ruB" firstAttribute="top" secondItem="1PR-hs-8Xv" secondAttribute="top" constant="20" id="HMy-w2-b5F"/>
-                                    <constraint firstAttribute="bottom" secondItem="FW2-ju-ta2" secondAttribute="bottom" constant="20" id="IV4-u3-gBa"/>
-                                    <constraint firstAttribute="centerX" secondItem="2K3-Ra-6pk" secondAttribute="centerX" id="OKq-36-drM"/>
-                                    <constraint firstItem="2K3-Ra-6pk" firstAttribute="top" secondItem="VOj-oD-ruB" secondAttribute="bottom" constant="8" id="VN1-IU-biP"/>
-                                    <constraint firstAttribute="height" constant="236" id="jYe-Kj-pao"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="1PR-hs-8Xv" secondAttribute="centerY" id="8LE-Nc-f2w"/>
-                            <constraint firstItem="1PR-hs-8Xv" firstAttribute="leading" secondItem="hfG-aU-0Hn" secondAttribute="leading" id="AHl-Ib-Tdz"/>
-                            <constraint firstAttribute="trailing" secondItem="1PR-hs-8Xv" secondAttribute="trailing" id="pem-JP-dgs"/>
-                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XIZ-2Z-hqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LES-8L-Ddv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="835" y="1045"/>
-        </scene>
-        <!--Application Step View Controller-->
-        <scene sceneID="N0C-aP-piL">
-            <objects>
-                <viewController storyboardIdentifier="ApplicationStep1" id="Lmw-Cs-smd" customClass="ApplicationStepViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="JsA-Fa-omF"/>
-                        <viewControllerLayoutGuide type="bottom" id="YIn-aU-R1m"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="1H9-fa-va0">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gen-b5-Yqe">
-                                <rect key="frame" x="0.0" y="182" width="600" height="236"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQk-rc-Zw6">
-                                        <rect key="frame" x="252" y="186" width="96" height="30"/>
-                                        <state key="normal" title="Previous Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="previousStepTapped:" destination="Lmw-Cs-smd" eventType="touchUpInside" id="vwV-RS-KPu"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hHx-X0-8wD">
-                                        <rect key="frame" x="266" y="147" width="69" height="30"/>
-                                        <state key="normal" title="Next Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextStepTapped:" destination="Lmw-Cs-smd" eventType="touchUpInside" id="g53-rW-Wye"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3C2-uz-7HT">
-                                        <rect key="frame" x="273" y="20" width="54.5" height="119.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="hHx-X0-8wD" secondAttribute="centerX" id="55Z-hb-XuP"/>
-                                    <constraint firstItem="hHx-X0-8wD" firstAttribute="top" secondItem="3C2-uz-7HT" secondAttribute="bottom" constant="8" id="8AM-bG-bG8"/>
-                                    <constraint firstAttribute="centerX" secondItem="dQk-rc-Zw6" secondAttribute="centerX" id="EgJ-uW-bJX"/>
-                                    <constraint firstAttribute="centerX" secondItem="3C2-uz-7HT" secondAttribute="centerX" id="IaG-xC-bJr"/>
-                                    <constraint firstItem="3C2-uz-7HT" firstAttribute="top" secondItem="Gen-b5-Yqe" secondAttribute="top" constant="20" id="KDo-hJ-A0l"/>
-                                    <constraint firstItem="dQk-rc-Zw6" firstAttribute="top" secondItem="hHx-X0-8wD" secondAttribute="bottom" constant="8" id="Rib-9y-6Si"/>
-                                    <constraint firstAttribute="bottom" secondItem="dQk-rc-Zw6" secondAttribute="bottom" constant="20" id="qdq-dA-6Tl"/>
-                                    <constraint firstAttribute="height" constant="236" id="s86-6P-2JM"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Gen-b5-Yqe" secondAttribute="centerY" id="UlN-uD-q0N"/>
-                            <constraint firstItem="Gen-b5-Yqe" firstAttribute="leading" secondItem="1H9-fa-va0" secondAttribute="leading" id="fBr-3E-hjL"/>
-                            <constraint firstAttribute="trailing" secondItem="Gen-b5-Yqe" secondAttribute="trailing" id="hG1-wJ-7lH"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xa6-NY-Mwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="183" y="1045"/>
-        </scene>
-        <!--Application Step View Controller-->
-        <scene sceneID="d4q-W9-dQh">
-            <objects>
-                <viewController storyboardIdentifier="ApplicationStep3" id="sgj-cS-Nax" customClass="ApplicationStepViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="mAF-Th-TIX"/>
-                        <viewControllerLayoutGuide type="bottom" id="m8G-4j-96p"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="47c-PK-Mja">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EUm-cr-P7r">
-                                <rect key="frame" x="0.0" y="182" width="600" height="236"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FLV-gH-DN5">
-                                        <rect key="frame" x="252" y="186" width="96" height="30"/>
-                                        <state key="normal" title="Previous Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="previousStepTapped:" destination="sgj-cS-Nax" eventType="touchUpInside" id="W1z-Fy-USw"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBu-EW-HSu">
-                                        <rect key="frame" x="266" y="147" width="69" height="30"/>
-                                        <state key="normal" title="Next Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextStepTapped:" destination="sgj-cS-Nax" eventType="touchUpInside" id="hQV-uQ-4m3"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqh-hT-31t">
-                                        <rect key="frame" x="273" y="20" width="54.5" height="119.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerX" secondItem="FLV-gH-DN5" secondAttribute="centerX" id="74y-uJ-5Ig"/>
-                                    <constraint firstItem="oBu-EW-HSu" firstAttribute="top" secondItem="tqh-hT-31t" secondAttribute="bottom" constant="8" id="U8S-5A-NgP"/>
-                                    <constraint firstItem="tqh-hT-31t" firstAttribute="top" secondItem="EUm-cr-P7r" secondAttribute="top" constant="20" id="VNO-U8-Msl"/>
-                                    <constraint firstAttribute="bottom" secondItem="FLV-gH-DN5" secondAttribute="bottom" constant="20" id="gQh-C2-mYf"/>
-                                    <constraint firstAttribute="centerX" secondItem="oBu-EW-HSu" secondAttribute="centerX" id="k5b-Ze-oNW"/>
-                                    <constraint firstAttribute="centerX" secondItem="tqh-hT-31t" secondAttribute="centerX" id="qQt-sz-t9R"/>
-                                    <constraint firstItem="FLV-gH-DN5" firstAttribute="top" secondItem="oBu-EW-HSu" secondAttribute="bottom" constant="8" id="qYc-mx-gdB"/>
-                                    <constraint firstAttribute="height" constant="236" id="vOe-Cd-UVj"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EUm-cr-P7r" firstAttribute="leading" secondItem="47c-PK-Mja" secondAttribute="leading" id="4Xm-JN-wVq"/>
-                            <constraint firstAttribute="centerY" secondItem="EUm-cr-P7r" secondAttribute="centerY" id="QeM-CG-JuG"/>
-                            <constraint firstAttribute="trailing" secondItem="EUm-cr-P7r" secondAttribute="trailing" id="x9Z-xY-7Fp"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9a1-jw-t2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="183" y="1741"/>
-        </scene>
-        <!--Application Step View Controller-->
-        <scene sceneID="zdQ-rv-SFT">
-            <objects>
-                <viewController storyboardIdentifier="ApplicationStep4" id="Yw5-qR-hfR" customClass="ApplicationStepViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="yaU-k7-KAf"/>
-                        <viewControllerLayoutGuide type="bottom" id="wmJ-Zd-l8c"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="teM-gd-9Ol">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="quv-RP-ZQ6">
-                                <rect key="frame" x="0.0" y="182" width="600" height="236"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBm-W2-ouR">
-                                        <rect key="frame" x="252" y="186" width="96" height="30"/>
-                                        <state key="normal" title="Previous Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="previousStepTapped:" destination="Yw5-qR-hfR" eventType="touchUpInside" id="e8E-ZB-9pV"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0D-J5-bXV">
-                                        <rect key="frame" x="266" y="147" width="69" height="30"/>
-                                        <state key="normal" title="Next Step">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="nextStepTapped:" destination="Yw5-qR-hfR" eventType="touchUpInside" id="6Mx-hM-CjT"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cq9-K9-Gf3">
-                                        <rect key="frame" x="273" y="20" width="54.5" height="119.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="WBm-W2-ouR" secondAttribute="bottom" constant="20" id="1pl-ju-aPS"/>
-                                    <constraint firstItem="cq9-K9-Gf3" firstAttribute="top" secondItem="quv-RP-ZQ6" secondAttribute="top" constant="20" id="2hU-q3-KPS"/>
-                                    <constraint firstAttribute="height" constant="236" id="9D3-2t-NVp"/>
-                                    <constraint firstAttribute="centerX" secondItem="v0D-J5-bXV" secondAttribute="centerX" id="CXU-Z5-5nW"/>
-                                    <constraint firstItem="WBm-W2-ouR" firstAttribute="top" secondItem="v0D-J5-bXV" secondAttribute="bottom" constant="8" id="DDK-Jr-Srb"/>
-                                    <constraint firstAttribute="centerX" secondItem="WBm-W2-ouR" secondAttribute="centerX" id="JvM-eD-ekE"/>
-                                    <constraint firstItem="v0D-J5-bXV" firstAttribute="top" secondItem="cq9-K9-Gf3" secondAttribute="bottom" constant="8" id="QiK-Zo-sD1"/>
-                                    <constraint firstAttribute="centerX" secondItem="cq9-K9-Gf3" secondAttribute="centerX" id="YnK-z9-mEi"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="quv-RP-ZQ6" secondAttribute="trailing" id="EWy-Qo-t4u"/>
-                            <constraint firstItem="quv-RP-ZQ6" firstAttribute="leading" secondItem="teM-gd-9Ol" secondAttribute="leading" id="UWY-F7-GzV"/>
-                            <constraint firstAttribute="centerY" secondItem="quv-RP-ZQ6" secondAttribute="centerY" id="vFj-Fs-TlT"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WNs-qc-YMe" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="835" y="1741"/>
+            <point key="canvasLocation" x="433" y="1663"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkbox_big_deselected.png" width="35" height="34"/>
+        <image name="checkbox_big_selected.png" width="35" height="34"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
